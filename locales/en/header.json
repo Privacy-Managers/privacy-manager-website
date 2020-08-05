@@ -1,0 +1,10 @@
+{
+  "pm-logo-alt": {
+    "description": "Image alt text",
+    "message": "Privacy Manager logo"
+  },
+  "pm-hamburger-aria-label": {
+    "description": "hamburger aria-label text",
+    "message": "Open primary navigation"
+  }
+}

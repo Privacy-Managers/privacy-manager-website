@@ -4,7 +4,10 @@
   "description": "Single language website starter for CMintS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run test:eslint && npm run test:stylelint && npm run test:prettier",
+    "test:eslint": "eslint config.js theme/js/**.js",
+    "test:stylelint": "stylelint theme/less/**.less",
+    "test:prettier": "prettylint pages/**.html pages/**.md",
     "build": "cmints --static",
     "deploy": "cmints --static --deploy",
     "start": "cmints --start",
@@ -21,5 +24,12 @@
   },
   "dependencies": {
     "cmints": "^1.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "prettier": "^2.0.5",
+    "prettylint": "^1.0.0",
+    "stylelint": "^13.6.1",
+    "stylelint-config-recommended": "^3.0.0"
   }
 }

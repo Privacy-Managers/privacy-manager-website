@@ -7,19 +7,25 @@ const templateData =
 {
   site: {
     root,
-    title: "CMintS Starter", // See "layouts/_head.ejs"
+    title: "Privacy Manager", // See "layouts/_head.ejs"
+    localeMap: {
+      "de": {name: "Deutsch", region: "de_DE", crowdin: "en-de"},
+      "en": {name: "English", region: "en_US"},
+      "fr": {name: "Français", region: "fr_FR", crowdin: "en-fr"},
+      "ru": {name: "Русский", region: "ru_RU", crowdin: "en-ru"}
+    },
     navigation: [
       {
-        title: "CMintS",
-        link: "https://cmints.io/"
+        id: "nav-about",
+        link: "#"
       },
       {
-        id: "nav-tutorial",
-        link: "https://cmints.io/quick-start"
+        id: "nav-contribute",
+        link: "#"
       },
       {
-        id: "nav-github",
-        link: "https://github.com/cmints/multi-lang-starter"
+        id: "nav-articles",
+        link: "#"
       }
     ]
   }

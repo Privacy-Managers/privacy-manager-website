@@ -1,23 +1,12 @@
 @import "_variables.less";
-@import "_navigation.less";
+@import "_header.less";
+@import "_grid.less";
+@import "_fonts.less";
 
 body
 {
-  margin: 0px;
-  font-family: sans-serif;
-}
-
-header
-{
-  background-color: @primary;
-  padding: 30px;
-}
-
-header > div
-{
-  margin: 0px auto;
-  max-width: 1000px;
-  color: @reverse;
+  font-family: Roboto, sans-serif;
+  margin: 0;
 }
 
 main
@@ -25,4 +14,27 @@ main
   margin: 0px auto;
   padding: 30px;
   max-width: 1000px;
+}
+
+.container
+{
+  max-width: @desktop-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: @tablet-width)
+{
+  .desktop-hide
+  {
+    display: none;
+  }
+}
+
+@media (max-width: @tablet-width)
+{
+  .tablet-hide
+  {
+    display: none;
+  }
 }
