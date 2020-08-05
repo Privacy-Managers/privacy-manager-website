@@ -1,14 +1,18 @@
 {
   "language-switch-label": {
     "description": "Text next to the language switch",
-    "message": "Поменять язык:"
+    "message": " "
   },
-  "nav-tutorial": {
+  "nav-about": {
     "description": "Navigation item text",
-    "message": "Руководство"
+    "message": "О нас"
   },
-  "nav-github": {
+  "nav-contribute": {
     "description": "Navigation item text",
-    "message": "Гитхаб"
+    "message": "Взнос"
+  },
+  "nav-articles": {
+    "description": "Navigation item text",
+    "message": "Статьи"
   }
 }

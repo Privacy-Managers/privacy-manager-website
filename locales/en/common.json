@@ -1,14 +1,18 @@
 {
   "language-switch-label": {
     "description": "Text next to the language switch",
-    "message": "View page in:"
+    "message": " "
   },
-  "nav-tutorial": {
+  "nav-about": {
     "description": "Navigation item text",
-    "message": "Tutorial"
+    "message": "About"
   },
-  "nav-github": {
+  "nav-contribute": {
     "description": "Navigation item text",
-    "message": "GitHub"
+    "message": "Contibute"
+  },
+  "nav-articles": {
+    "description": "Navigation item text",
+    "message": "Articles"
   }
 }
