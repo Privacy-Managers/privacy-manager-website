@@ -1,9 +1,27 @@
 <header>
-  <img src="images/icon.png" />
-  <p>
-    <a href="\">
-      <%= site.title %>
-    </a>
-  </p>
-  <% include _language %>
+  <div class="tablet-hide">
+    <div class="col2">
+      <a href="\">
+        <img src="/images/icon.png" />
+        <p>
+        <%= site.title %>
+        </p>
+      </a>
+      <% include _language %>
+      <div class="cell1-2">
+        <% include _navigation %>
+      </div>
+    </div>
+  </div>
+  <div class="desktop-hide">
+    <div class="col2">
+      <a href="/" class="cell1 start">
+        <img src="/images/icon.png" alt="Privacy Manager logo">
+      </a>
+      <button class="cell2 end" id="hamburger" aria-label="Open primary navigation"></button>
+    </div>
+    <div id="hamburger-menu">
+      <% include _navigation %>
+    </div>
+  </div>
 </header>
