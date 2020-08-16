@@ -1,22 +1,24 @@
 <header>
   <div class="tablet-hide">
-    <div class="col2">
-      <a href="\">
-        <img src="/images/icon.png" />
+    <div class="col2 header-top">
+      <a href="\" class="cell1 start">
+        <img src="/images/logo.png" />
         <p>
         <%= site.title %>
         </p>
       </a>
+      <div class="cell2 end">
       <% include _language %>
-      <div class="cell1-2">
-        <% include _navigation %>
       </div>
+    </div>
+    <div class="col1">
+      <% include _navigation %>
     </div>
   </div>
   <div class="desktop-hide">
-    <div class="col2">
+    <div class="col2 header-top">
       <a href="/" class="cell1 start">
-        <img src="/images/icon.png" alt="Privacy Manager logo">
+        <img src="/images/logo.png" alt="Privacy Manager logo">
       </a>
       <button class="cell2 end" id="hamburger" aria-label="Open primary navigation"></button>
     </div>

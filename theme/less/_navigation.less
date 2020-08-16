@@ -3,43 +3,23 @@ header nav
   border-top: 1px solid #E9E9E9;
   background: #FFFFFF;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.06);
-  margin: 25px 0;
 }
 
 header nav ul
 {
   display: flex;
   margin: 0;
-  padding: 0 30px;
-  align-items: center;
+  padding: 0;
   list-style: none;
-  height: 78px;
 }
 
 header nav ul a
 {
-  font-weight: 500;
+  display: block;
   font-size: 24px;
   text-decoration: none;
   color: #626262;
-  padding: 10px 45px;
-}
-
-#hamburger
-{
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0.5rem;
-  border: 0;
-}
-
-#hamburger:before
-{
- content: "";
- display: block;
- background-image: url(/images/hamburger.svg);
- height: 2rem;
- width: 2rem;
+  padding: 25px;
 }
 
 #hamburger-menu
@@ -50,14 +30,12 @@ header nav ul a
 #hamburger-menu ul
 {
   display: block;
-  font-size: 0.8rem;
-  height: 195px;
 }
 
 #hamburger-menu a
 {
   padding: 10px;
-  display: block;
+  font-size: 13px;
 }
 
 #hamburger-menu:not(.visible)
@@ -78,5 +56,15 @@ header nav ul a
   .tablet-hide
   {
     display: none;
+  }
+
+  header nav
+  {
+    border-top: none;
+  }
+
+  #hamburger
+  {
+    background-repeat: no-repeat;
   }
 }
