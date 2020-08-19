@@ -1,9 +1,9 @@
 <header>
   <div class="tablet-hide">
     <div class="col2 header-top">
-      <a href="\" class="cell1 start">
-        <img src="/images/logo.png" />
-        <p>
+      <a href="/" class="cell1 start">
+        <img src="<%= site.root %>/images/logo.png" class="logo" />
+        <p id="title">
         <%= site.title %>
         </p>
       </a>
@@ -18,7 +18,7 @@
   <div class="desktop-hide">
     <div class="col2 header-top">
       <a href="/" class="cell1 start">
-        <img src="/images/logo.png" alt="Privacy Manager logo">
+        <img src="<%= site.root %>/images/logo.png" class="logo" alt="Privacy Manager logo">
       </a>
       <button class="cell2 end" id="hamburger" aria-label="Open primary navigation"></button>
     </div>

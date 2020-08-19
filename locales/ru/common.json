@@ -1,8 +1,4 @@
 {
-  "language-switch-label": {
-    "description": "Text next to the language switch",
-    "message": " "
-  },
   "nav-about": {
     "description": "Navigation item text",
     "message": "О нас"
