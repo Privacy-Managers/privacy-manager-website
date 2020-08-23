@@ -1,28 +1,21 @@
 <header>
-  <div class="tablet-hide">
-    <div class="col2 header-top">
-      <a href="/" class="cell1 start">
-        <img src="<%= site.root %>/images/logo.png" class="logo" />
-        <p id="title">
-        <%= site.title %>
+  <div>
+    <div id="header-top" class="col2 device">
+      <a href="/" id="header-logo" class="cell1 start">
+        <img src="<%= site.root %>/images/logo.png" alt="Privacy Manager logo" />
+        <p class="tablet-hide">
+          <%= site.title %>
         </p>
       </a>
-      <div class="cell2 end">
-      <% include _language %>
+      <button id="hamburger" class="cell2 end desktop-hide" aria-label="Open primary navigation"></button>
+      <div class="cell2 end tablet-hide">
+        <% include _language %>
       </div>
     </div>
-    <div class="col1">
+    <div class="col1 tablet-hide">
       <% include _navigation %>
     </div>
-  </div>
-  <div class="desktop-hide">
-    <div class="col2 header-top">
-      <a href="/" class="cell1 start">
-        <img src="<%= site.root %>/images/logo.png" class="logo" alt="Privacy Manager logo">
-      </a>
-      <button class="cell2 end" id="hamburger" aria-label="Open primary navigation"></button>
-    </div>
-    <div id="hamburger-menu">
+    <div id="hamburger-menu" class="desktop-hide">
       <% include _navigation %>
     </div>
   </div>

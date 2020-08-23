@@ -17,13 +17,25 @@ header nav ul a
   display: block;
   font-size: 24px;
   text-decoration: none;
-  color: #626262;
+  color: @primary;
   padding: 25px;
+}
+
+#hamburger
+{
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  background-image: url(/images/hamburger.svg);
+  width: 32px;
+  height: auto;
 }
 
 #hamburger-menu
 {
-  text-align: center; 
+  text-align: center;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
 }
 
 #hamburger-menu ul
@@ -38,24 +50,11 @@ header nav ul a
 
 #hamburger-menu:not(.visible)
 {
-  display: none;
-}
-
-@media (min-width: @tablet-width)
-{
-  .desktop-hide
-  {
-    display: none;
-  }
+  height: 0px;
 }
 
 @media (max-width: @tablet-width)
 {
-  .tablet-hide
-  {
-    display: none;
-  }
-
   header nav
   {
     border-top: none;

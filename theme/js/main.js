@@ -2,8 +2,12 @@ const selector = require("./_selector");
 
 document.addEventListener("DOMContentLoaded", selector.init, false);
 
-const hamburger = document.querySelector("#hamburger");
-hamburger.addEventListener("click", () =>
+document.querySelector("#hamburger").addEventListener("click", () =>
 {
-  document.querySelector("#hamburger-menu").classList.toggle("visible");
+  const container = document.querySelector("#hamburger-menu");
+  if (container.classList.contains("visible"))
+    container.style.height = "0px";
+  else
+    container.style.height = `${container.scrollHeight}px`;
+  container.classList.toggle("visible");
 });

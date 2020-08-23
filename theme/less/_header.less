@@ -1,4 +1,4 @@
-.header-top
+#header-top
 {
   padding: 25px;
 }
@@ -6,7 +6,7 @@
 header label select
 {
   width: 163px;
-  color: @primary;
+  color: @secondary;
   font-size: 24px;
   border: 0;
   opacity: 0.7;
@@ -16,39 +16,41 @@ header label select
   background: url(/images/language-arrow.png) no-repeat right;
 }
 
-header a
+#header-logo
 {
+  display: flex;
   text-decoration: none;
 }
 
-#title
+#header-logo p
 {
-  display: inline;
-  opacity: 0.7;
-  color: #000000;
+  color: @primary;
   padding: 0 10px;
   font-weight: bold;
 }
 
-.logo
+#header-logo img
 {
- vertical-align: middle;
- width: 32px;
- height: auto;
-}
-
-#hamburger
-{
-  background-color: transparent;
-  cursor: pointer;
-  border: 0;
-  background-image: url(/images/hamburger.svg);
+  align-self: center;
   width: 32px;
   height: auto;
 }
 
+@media (min-width: @tablet-width)
+{
+  .desktop-hide
+  {
+    display: none;
+  }
+}
+
 @media (max-width: @tablet-width)
 {
+  .tablet-hide
+  {
+    display: none;
+  }
+
   header
   {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.06);
