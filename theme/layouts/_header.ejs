@@ -1,5 +1,4 @@
 <header>
-  <div>
     <div id="header-top" class="col2 device">
       <a href="/" id="header-logo" class="cell1 start">
         <img src="<%= site.root %>/images/logo.png" alt="Privacy Manager logo" />
@@ -12,11 +11,7 @@
         <% include _language %>
       </div>
     </div>
-    <div class="col1 tablet-hide">
+    <div id="hamburger-menu" class="col1">
       <% include _navigation %>
     </div>
-    <div id="hamburger-menu" class="desktop-hide">
-      <% include _navigation %>
-    </div>
-  </div>
 </header>

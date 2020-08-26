@@ -1,10 +1,10 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 384 256">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 90 60">
 <style type="text/css">
-	.st0{fill:#3A7D11;}
+  rect{fill:#3A7D11;}
 </style>
 <g>
-	<rect y="213.3" class="st0" width="384" height="42.7"/>
-	<rect y="106.7" class="st0" width="384" height="42.7"/>
-	<rect class="st0" width="384" height="42.7"/>
+  <rect y="50" width="90" height="10"/>
+  <rect y="25" width="90" height="10"/>
+  <rect class="st0" width="90" height="10"/>
 </g>
 </svg>
