@@ -25,37 +25,31 @@ header nav ul a
   header nav
   {
     border-top: none;
-  }
-
-  #hamburger
-  {
-    background-color: transparent;
-    cursor: pointer;
-    border: 0;
-    background-image: url(/images/hamburger.svg);
-    width: 32px;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #hamburger-menu
-  {
     text-align: center;
     overflow: hidden;
     transition: height .5s ease-in-out;
   }
 
-  #hamburger-menu ul
+  #hamburger
+  {
+    cursor: pointer;
+    border: 0;
+    width: 32px;
+    background: url(/images/hamburger.svg) transparent no-repeat center;
+    margin: 25px;
+  }
+
+  header nav ul
   {
     display: block;
   }
 
-  #hamburger-menu a
+  header nav a
   {
     padding: 10px;
   }
 
-  #hamburger-menu:not(.visible)
+  header nav:not(.visible)
   {
     height: 0px;
   }

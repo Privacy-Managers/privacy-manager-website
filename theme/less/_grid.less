@@ -27,6 +27,16 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.cell1, .cell1-2, .cell1-3, .cell1-4, .cell1-5,
+.cell2, .cell2-3, .cell2-4, .cell2-5,
+.cell3, .cell3-4, .cell3-5,
+.cell4, .cell4-5,
+.cell5
+{
+  /* See: https://github.com/cmints/website/issues/8 */
+  min-width: 0;
+}
+
 .cell1
 {
   grid-column-end: 2;
@@ -106,4 +116,25 @@
 .bottom
 {
   align-items: end;
+}
+
+@media (max-width: @tablet-width)
+{
+  main, footer
+  {
+    .col2, .col3, .col4, .col5
+    {
+      > *
+      {
+        grid-column-start: 1;
+        grid-column-end: 1;
+      }
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      .tablet-middle
+      {
+        align-items: center;
+      }
+    }
+  }
 }

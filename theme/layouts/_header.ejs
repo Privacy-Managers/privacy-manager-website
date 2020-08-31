@@ -1,7 +1,7 @@
 <header>
     <div id="header-top" class="col2 device">
       <a href="/" id="header-logo" class="cell1 start">
-        <img src="<%= site.root %>/images/logo.png" alt="Privacy Manager logo" />
+        {attribute1 <img src="<%= site.root %>/images/logo.png" alt="Privacy Manager logo" />}
         <p class="tablet-hide">
           <%= site.title %>
         </p>
@@ -11,7 +11,7 @@
         <% include _language %>
       </div>
     </div>
-    <div id="hamburger-menu" class="col1">
+    <div class="col1">
       <% include _navigation %>
     </div>
 </header>

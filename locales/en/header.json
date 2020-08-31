@@ -1,0 +1,6 @@
+{
+  "attribute1": {
+  "description": "Image alt text",
+  "message": "<img1 src='<%= site.root %>/images/logo.png' alt='Privacy Manager logo' />"
+  }
+}

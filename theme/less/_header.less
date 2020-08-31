@@ -3,27 +3,29 @@ header
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.06);
 }
 
-#header-top
-{
-  padding: 25px;
-}
-
 header label select
 {
-  width: 163px;
   color: @secondary;
   font-size: 24px;
   border: 0;
+  cursor: pointer;
+  margin: 25px;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: url(/images/language-arrow.png) no-repeat right;
+  background: url(/images/language-arrow.svg) transparent no-repeat 90% 50%;
+}
+
+header select option
+{
+  margin: 0 15px;
 }
 
 #header-logo
 {
   display: flex;
   text-decoration: none;
+  padding: 25px;
 }
 
 #header-logo p
@@ -38,7 +40,6 @@ header label select
 #header-logo img
 {
   width: 32px;
-  height: auto;
 }
 
 @media (min-width: @tablet-width)
@@ -56,7 +57,7 @@ header label select
     display: none;
   }
 
-  header label select
+  header nav ul 
   {
     padding: 10px;
   }
