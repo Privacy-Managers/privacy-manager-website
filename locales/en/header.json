@@ -1,6 +1,10 @@
 {
-  "attribute1": {
-  "description": "Image alt text",
-  "message": "<img1 src='<%= site.root %>/images/logo.png' alt='Privacy Manager logo' />"
+  "pm-logo-alt": {
+    "description": "Image alt text",
+    "message": "Privacy Manager logo"
+  },
+  "pm-hamburger-aria-label": {
+    "description": "hamburger aria-label text",
+    "message": "Open primary navigation"
   }
 }

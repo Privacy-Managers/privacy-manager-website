@@ -1,12 +1,10 @@
-<label>
-  <select class="languageSelector" data-page="<%= page.pathname %>" data-root="<%= site.root %>">
-    <% for (const locale of page.locales) { %>
-      <% const language = `${site.localeMap[locale].name} (${locale.toUpperCase()})`; %>
-      <% if (page.locale == locale) { %>
-        <option value="<%= locale %>" selected><%= language %></option>
-      <% } else { %>
-        <option value="<%= locale %>"><%= language %></option>
-      <% } %>
+<select class="languageSelector" data-page="<%= page.pathname %>" data-root="<%= site.root %>">
+  <% for (const locale of page.locales) { %>
+    <% const language = `${site.localeMap[locale].name} (${locale.toUpperCase()})`; %>
+    <% if (page.locale == locale) { %>
+      <option value="<%= locale %>" selected><%= language %></option>
+    <% } else { %>
+      <option value="<%= locale %>"><%= language %></option>
     <% } %>
-  </select>
-</label>
+  <% } %>
+</select>

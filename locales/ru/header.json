@@ -1,6 +1,10 @@
 {
-  "attribute1": {
-  "description": "Image alt text",
-  "message": "<img1 src='<%= site.root %>/images/logo.png' alt='Логотип Privacy Manager' />"
+  "pm-logo-alt": {
+    "description": "Image alt text",
+    "message": "Лого Privacy Manager"
+  },
+  "pm-hamburger-aria-label": {
+    "description": "Image alt text",
+    "message": "Открыть основную навигацию"
   }
 }
