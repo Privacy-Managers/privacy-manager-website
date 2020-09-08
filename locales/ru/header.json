@@ -4,7 +4,7 @@
     "message": "Лого Privacy Manager"
   },
   "pm-hamburger-aria-label": {
-    "description": "Image alt text",
+    "description": "hamburger aria-label text",
     "message": "Открыть основную навигацию"
   }
 }

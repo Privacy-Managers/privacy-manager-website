@@ -1,12 +1,12 @@
 <header>
-    <div class="col2 device">
+    <div class="col2 container">
       <a href="/" id="header-logo" class="cell1 start">
         <img src="<%= site.root %>/images/logo.png" alt="{pm-logo-alt(header)}" />
-        <p class="tablet-hide">
+        <h1 class="tablet-hide">
           <%= site.title %>
-        </p>
+        </h1>
       </a>
-      <button id="hamburger" class="cell2 end desktop-hide" aria-label="Open primary navigation"></button>
+      <button id="hamburger" class="cell2 end desktop-hide" aria-label="{pm-hamburger-aria-label(header)}"></button>
       <div class="cell2 end tablet-hide">
         <% include _language %>
       </div>
