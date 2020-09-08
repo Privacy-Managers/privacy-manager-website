@@ -1,3 +1,4 @@
+<div class="switcher">
 <select class="languageSelector" data-page="<%= page.pathname %>" data-root="<%= site.root %>">
   <% for (const locale of page.locales) { %>
     <% const language = `${site.localeMap[locale].name} (${locale.toUpperCase()})`; %>
@@ -8,3 +9,7 @@
     <% } %>
   <% } %>
 </select>
+<label>
+  <%= `${site.localeMap[page.locale].name} (${page.locale.toUpperCase()})` %>
+</label>
+</div>
