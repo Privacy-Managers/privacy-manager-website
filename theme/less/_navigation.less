@@ -35,8 +35,17 @@ header nav ul a
     cursor: pointer;
     border: 0;
     width: 32px;
-    background: url(/images/hamburger.svg) transparent no-repeat center;
     margin: 25px;
+    background-color: transparent;
+  }
+
+  #hamburger:after
+  {
+    content: "";
+    display: block;
+    height: 32px;
+    width: 32px;
+    background: url(/images/hamburger.svg) transparent no-repeat center;
   }
 
   header nav ul
