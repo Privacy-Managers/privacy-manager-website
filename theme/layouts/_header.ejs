@@ -11,8 +11,23 @@
         <% include _language %>
       </div>
     </div>
-    <div class="separator"></div>
+    <div class="separator tablet-hide"></div>
     <div class="col1 container">
-      <% include _navigation %>
+      <nav>
+        <ul>
+          <% for (const {id, title, link} of site.navigation) {%>
+            <li>
+              <% if (id) { %>
+                <a href="<%- link %>" target="_blank">{<%= id %>(common)}</a>
+              <% } else { %>
+                <a href="<%- link %>" target="_blank"><%- title %></a>
+              <% } %>
+            </li>
+          <% } %>
+          <li class="desktop-hide">
+            <% include _language %>
+          </li>
+        </ul>
+      </nav>
     </div>
 </header>

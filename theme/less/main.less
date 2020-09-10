@@ -1,5 +1,4 @@
 @import "_variables.less";
-@import "_navigation.less";
 @import "_header.less";
 @import "_grid.less";
 @import "_fonts.less";
@@ -22,4 +21,20 @@ main
   max-width: @desktop-width;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: @tablet-width)
+{
+  .desktop-hide
+  {
+    display: none;
+  }
+}
+
+@media (max-width: @tablet-width)
+{
+  .tablet-hide
+  {
+    display: none;
+  }
 }
