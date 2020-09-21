@@ -37,43 +37,43 @@ main
   ul li
   {
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 184.9%;
-    justify-self: center;
     list-style: none;
-    
   }
 
   ul li::before
   {
     content: "";
     background: url("/images/list-point.svg") no-repeat left center transparent;
-    padding: 0 0 0 0.94rem;    
+    display: inline-block;
+    width: 15px; 
+    height: 15px;   
   }
 
   ul
   {
-    padding: 2.5rem 1.88rem;
+    padding: 40px 30px;
     margin: 0;
   }
 
   #promo-video
   {
     width: 100%;
-    max-width: 28rem;
-    height: 17.6rem;
+    max-width: 448px;
+    height: 281.6px;
   }
 
   #install-button
   {
     display: block;
-    padding: 1.88rem;
-    margin: 1.25rem 0;
+    padding: 30px;
+    margin: 20px 0;
     text-decoration: none;
     font-weight: 500;
     font-size: 1.5rem;
     background: #3A7D11;
-    box-shadow: 0 0.5rem 1.25rem rgba(104, 171, 103, 0.35);
+    box-shadow: 0 8px 20px rgba(104, 171, 103, 0.35);
     border-radius: 83px;
     text-align:center;
     color: #ffffff
@@ -86,13 +86,7 @@ main
 
   .cards > div
   {
-    max-width: 21.3rem;
+    max-width: 341px;
     text-align: center;
   }
-}
-
-#greyscale
-{
-  filter: grayscale(100%);
-  opacity: 0.7;
 }
