@@ -3,6 +3,7 @@
 @import "_grid.less";
 @import "_fonts.less";
 @import "_homepage.less";
+@import "_footer.less";
 
 body
 {
@@ -23,24 +24,10 @@ main
   margin-right: auto;
 }
 
-.greyscale
+.grayscale
 {
   filter: grayscale(100%);
   opacity: 0.7;
-}
-
-footer
-{
-  background-color: @secondary;
-  min-height: 130px;
-  display: grid;
-}
-
-footer p
-{
-  color: @reverse;
-  padding: 0 36px;
-  text-align: center;
 }
 
 @media (min-width: @tablet-width)

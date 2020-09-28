@@ -38,7 +38,7 @@ main
   {
     font-weight: 300;
     font-size: 1.5rem;
-    line-height: 184.9%;
+    line-height: 185%;
     list-style: none;
   }
 
@@ -57,11 +57,12 @@ main
     margin: 0;
   }
 
-  #promo-video
+  #promo-media
   {
     width: 100%;
-    max-width: 448px;
-    height: 281.6px;
+    --item-width: 448px;
+    max-width: var(--item-width);
+    height: calc(var(--item-width) * 5 / 8);
   }
 
   #install-button
