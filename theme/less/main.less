@@ -28,6 +28,12 @@ main
 {
   filter: grayscale(100%);
   opacity: 0.7;
+  transition: filter 0.5s;
+}
+
+.grayscale:hover
+{
+  filter: grayscale(0);
 }
 
 @media (min-width: @tablet-width)
