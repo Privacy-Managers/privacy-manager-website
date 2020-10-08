@@ -2,18 +2,19 @@
 @import "_header.less";
 @import "_grid.less";
 @import "_fonts.less";
+@import "_homepage.less";
+@import "_footer.less";
 
 body
 {
   font-family: Roboto, sans-serif;
   margin: 0;
+  color: @primary;
 }
 
 main
 {
-  margin: 0px auto;
-  padding: 30px;
-  max-width: 1000px;
+  padding: 0;
 }
 
 .container
@@ -21,6 +22,18 @@ main
   max-width: @desktop-width;
   margin-left: auto;
   margin-right: auto;
+}
+
+.grayscale
+{
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: filter 0.5s;
+}
+
+.grayscale:hover
+{
+  filter: grayscale(0);
 }
 
 @media (min-width: @tablet-width)

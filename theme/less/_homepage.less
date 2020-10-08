@@ -1,0 +1,93 @@
+main
+{
+  & > section
+  {
+    padding: 78px 25px;
+    box-sizing: border-box;
+  }
+
+  h2, h3, h4
+  {
+    font-weight: 700;
+  }
+
+  h2
+  {
+    font-size: 3.75rem;
+    line-height: 120%;
+    margin: 0;
+  }
+
+  h3
+  {
+    font-size: 3rem;
+  }
+
+  h3 em
+  {
+    font-style: normal;
+    color: @secondary;
+  }
+
+  h4
+  {
+    font-size: 2.25rem;
+  }
+
+  ul li
+  {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 185%;
+    list-style: none;
+  }
+
+  ul li::before
+  {
+    content: "";
+    background: url("/images/list-point.svg") no-repeat left center transparent;
+    display: inline-block;
+    width: 15px; 
+    height: 15px;   
+  }
+
+  ul
+  {
+    padding: 40px 30px;
+    margin: 0;
+  }
+
+  #promo-media
+  {
+    width: 100%;
+    --item-width: 448px;
+    max-width: var(--item-width);
+    height: calc(var(--item-width) * 5 / 8);
+  }
+
+  #install-button
+  {
+    display: block;
+    padding: 30px;
+    margin: 20px 0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background: #3A7D11;
+    box-shadow: 0 8px 20px rgba(104, 171, 103, 0.35);
+    border-radius: 83px;
+    text-align:center;
+    color: #ffffff
+  }
+
+  .bg-secondary
+  {
+    background-color: #F9F9F9;
+  }
+
+  .cards > div
+  {
+    max-width: 341px;
+    text-align: center;
+  }
+}

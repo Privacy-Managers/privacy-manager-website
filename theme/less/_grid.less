@@ -27,6 +27,11 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.col2.center, .col3.center, .col4.center, .col5.center
+{
+  justify-items: center;
+}
+
 .cell1, .cell1-2, .cell1-3, .cell1-4, .cell1-5,
 .cell2, .cell2-3, .cell2-4, .cell2-5,
 .cell3, .cell3-4, .cell3-5,
@@ -93,7 +98,7 @@
   align-self: center;
 }
 
-.center
+.center:not(.col2):not(.col3):not(.col4):not(.col5)
 {
   justify-self: center;
 }
