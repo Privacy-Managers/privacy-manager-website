@@ -1,32 +1,107 @@
 ---
 title: Privacy Manager
 description: Privacy Manager website
----
+buttonText:
+  id: Privacy-manager-link
+  description: Link to Chrome extension web store
+  content: Get Privacy Manager for Chrome
+buttonLink: https://chrome.google.com/webstore/detail/privacy-manager/giccehglhacakcfemddmfhdkahamfcmd
+mediaSection: https://www.youtube.com/embed/iaKweivaOhI
+sections:
+  privacyManager:
+    id: privacy-manager
+    description: Header of the section
+    content: Privacy Manager
+  whatYouGet:
+    id: what-you-get
+    description: Section title
+    content: What <em>You Get</em>
+  whatMediaSays:
+    id: what-media-says
+    description: Section title
+    content: What Media <em>Says</em>
+cardsHeading:
+  transparency:
+    id: what-u-get-trasparency-heading
+    description: What you get section item title
+    content: Transparency
+  control:
+    id: what-u-get-control-heading
+    description: What you get section item title
+    content: Keep Under Control
+  secure:
+    id: what-u-get-secure-heading
+    description: What you get section item title
+    content: Keep Under Control
+cardsText:
+  transparency:
+    id: what-u-get-trasparency-p
+    description: What You Get section item text
+    content: Something about Transparency, Something about Transparency Something about Transparency
+  control:
+    id: what-u-get-control-p
+    description: What You Get section item text
+    content: Something about Control, Something about Control Something about Control
+  secure:
+    id: what-u-get-secure-p
+    description: What You Get section item text
+    content: Something about Security Something about Security Something about Security
+listItems:
+  listItem1:
+    id: privacy-manager-li1
+    description: Privacy Manager section bullet point
+    content: Privacy Management
+  listItem2:
+    id: privacy-manager-li2
+    description: Privacy Manager section bullet point
+    content: <fix>Cookie</fix> Management
+  listItem3:
+    id: privacy-manager-li3
+    description: Privacy Manager section bullet point
+    content: Browsing data deletion on browser start
+  listItem4:
+    id: privacy-manager-li4
+    description: Privacy Manager section bullet point
+    content: Network monitoring
 
+---
+<% 
+  const sect = page.sections;
+  const butText = page.buttonText;
+  const sect1 = sect.whatYouGet;
+%>
 <section class="col2 container">
   <div>
-    <h2>{privacy-manager[Header of the section] Privacy Manager}</h2>
+    <h2>{<%- `${sect.privacyManager.id}[${sect.privacyManager.description}] ${sect.privacyManager.content}` %>}</h2>
     <ul>
-      <li>{privacy-manager-li1[Privacy Manager section bullet point] Privacy Management}</li>
-      <li>{privacy-manager-li2[Privacy Manager section bullet point] <fix>Cookie</fix> Management}</li>
-      <li>{privacy-manager-li3[Privacy Manager section bullet point] Browsing data deletion on browser start}</li>
-      <li>{privacy-manager-li4[Privacy Manager section bullet point] Network monitoring}</li>
+      <% 
+        for (const listItem in page.listItems ) { %>
+        <li>
+          <%
+          const {id} = page.listItems[listItem];
+          const {description} = page.listItems[listItem];
+          const {content} = page.listItems[listItem];
+          const string = `${id}[${description}] ${content}`;
+          %> 
+          {<%- string %>}
+        </li>
+      <% } %>
     </ul>
-    <a id="install-button" href="https://chrome.google.com/webstore/detail/privacy-manager/giccehglhacakcfemddmfhdkahamfcmd" target=_blank>{Privacy-manager-link[Link to Chrome extension web store] Get Privacy Manager for Chrome}</a>
+    <a id="install-button" href="<%- page.buttonLink %>" target=_blank>{<%- `${butText.id}[${butText.description}] ${butText.content}` %>}</a>
   </div>
-  <iframe class="tablet-hide end" id="promo-media" src="https://www.youtube.com/embed/iaKweivaOhI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  <iframe class="tablet-hide end" id="promo-media" src="<%- page.mediaSection %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
   </iframe>
 </section>
 <section class="bg-secondary">
   <div class="col3 center container cards">
-    <h3 class="cell1-3">{what-you-get[Section title] What <em>You Get</em>}</h3>
+    <h3 class="cell1-3">{<%- `${sect1.id}[${sect1.description}] ${sect1.content}` %>}</h3>
     <div>
-      <img src="/images/trancparency.svg" alt="{what-u-get-trasparency-alt['What you get' section item image alt] Magnifier and newspaper}" />
+      <img src="{/images/trancparency.svg" alt="{what-u-get-trasparency-alt['What you get' section item image alt] Magnifier and newspaper}" />
       <h4>{what-u-get-trasparency-heading["What you get" section item title] Transparency}</h4>
       <p>{what-u-get-trasparency-p["What You Get" section item text] Something about Transparency, Something about Transparency Something about Transparency}</p>
     </div>
     <div>
-      <img src="/images/keep-under-control.svg" alt="{what-u-get-control-alt['What you get' section item image alt] Content control}" />
+      <img src="{/images/keep-under-control.svg" alt="{what-u-get-control-alt['What you get' section item image alt] Content control}" />
       <h4>{what-u-get-control-heading["What you get" section item title] Keep Under Control}</h4>
       <p>{what-u-get-control-p["What You Get" section item text] Something about Control Something about Control Something about Control}</p>
     </div>
